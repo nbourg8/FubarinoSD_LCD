@@ -189,11 +189,11 @@ void editParam(int param, String direction)
 		case 6: //Horiz Angle -30 to +30 degrees
 		if (direction == "right" && horiz_angle < 30)
 		{
-			vert_angle = vert_angle + 1;
+			horiz_angle = horiz_angle + 1;
 		}
 		else if (direction == "left" && horiz_angle > -30)
 		{
-			vert_angle = vert_angle - 1;
+			horiz_angle = horiz_angle - 1;
 		}
 		break;
 	}
