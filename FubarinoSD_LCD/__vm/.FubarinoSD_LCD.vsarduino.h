@@ -22,6 +22,7 @@
 
 //
 //
+void editParam(int param, String direction);
 
 #include "Board_Defs.h" 
 #include "arduino.h"
