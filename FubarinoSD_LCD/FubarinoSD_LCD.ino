@@ -10,7 +10,7 @@ LiquidCrystal lcd(12, 11, 10,9,8,7);
 int mainMenu = 0;
 int bat_main = 0;
 int bat_secondary = 0;
-int max_menu_count = 5;
+int max_menu_count = 6;
 float speed = 0;
 int spin = 0;
 int vert_angle = 0;
@@ -186,7 +186,7 @@ void editParam(int param, String direction)
 			vert_angle = vert_angle - 1;
 		}
 		break;
-		case 6: //Vertical Angle -30 to +30 degrees
+		case 6: //Horiz Angle -30 to +30 degrees
 		if (direction == "right" && horiz_angle < 30)
 		{
 			vert_angle = vert_angle + 1;

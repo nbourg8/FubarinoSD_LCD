@@ -222,7 +222,7 @@ PreProcessor.HeaderCount=1
 PreProcessor.PrototypeCount=5
 vm.last.preproc.file.0.file=FubarinoSD_LCD.ino
 vm.last.preproc.file.0.offset=1
-vm.last.preproc.file.0.length=4273
+vm.last.preproc.file.0.length=4270
 vm.last.preproc.file.0.linecount=200
 vm.last.preproc.file.0.linestart=0
 vm.last.preproc.file.0.lineend=200
@@ -235,7 +235,7 @@ runtime.vm.ide.platforms.path=C:\Program Files (x86)\Atmel\Studio\7.0\Extensions
 build.variant.path=C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\variants\Fubarino_SD
 archive_file=core.a
 archive_file_path=C:\Users\nbourg8\AppData\Local\Temp\VMBuilds\FubarinoSD_LCD\chipKIT_chipkit_pic32_fubarino_sd\core.a
-extra.time.local=7337791
+extra.time.local=13733036
 tools.ctags.path={runtime.tools.ctags.path}
 tools.ctags.cmd.path={path}/ctags
 tools.ctags.pattern="{cmd.path}" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives "{source_file}"
