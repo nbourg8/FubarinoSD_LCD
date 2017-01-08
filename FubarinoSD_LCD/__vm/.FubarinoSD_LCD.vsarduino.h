@@ -22,7 +22,8 @@
 
 //
 //
-void editParam(int param, String direction);
+void editParam(String direction);
+void SD_Write(String text);
 
 #include "Board_Defs.h" 
 #include "arduino.h"

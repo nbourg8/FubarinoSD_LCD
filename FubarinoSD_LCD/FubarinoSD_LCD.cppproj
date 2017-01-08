@@ -70,6 +70,8 @@
     <ListValues>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries</Value>
       <Value>C:/Users/nbourg8/Documents/Arduino/libraries</Value>
@@ -109,6 +111,8 @@
     <ListValues>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries</Value>
       <Value>C:/Users/nbourg8/Documents/Arduino/libraries</Value>
@@ -141,7 +145,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries;C:/Users/nbourg8/Documents/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/avr;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/pps;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/util;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/variants/Fubarino_SD;../../../FubarinoSD_LCD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/4.8.3-pic32gcc/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include/;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers/VM_DBG;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries;C:/Users/nbourg8/Documents/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/avr;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/pps;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/util;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/variants/Fubarino_SD;../../../FubarinoSD_LCD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/4.8.3-pic32gcc/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include/;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers/VM_DBG;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility;</VMSETTING_IncludePaths>
     <VisualMicroSettings>
       <VisualMicroSettings xmlns="">
         <ValidatedAS7>1</ValidatedAS7>
@@ -177,6 +181,8 @@
     <ListValues>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries</Value>
       <Value>C:/Users/nbourg8/Documents/Arduino/libraries</Value>
@@ -216,6 +222,8 @@
     <ListValues>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD</Value>
+      <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries</Value>
       <Value>C:/Users/nbourg8/Documents/Arduino/libraries</Value>
@@ -248,7 +256,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries;C:/Users/nbourg8/Documents/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/avr;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/pps;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/util;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/variants/Fubarino_SD;../../../FubarinoSD_LCD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/4.8.3-pic32gcc/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include/;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers/VM_DBG;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries;C:/Users/nbourg8/Documents/Arduino/libraries;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/avr;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/pps;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/cores/pic32/util;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/variants/Fubarino_SD;../../../FubarinoSD_LCD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/4.8.3-pic32gcc/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/tools/pic32-tools/4.8.3-pic32gcc/lib/gcc/pic32mx/4.8.3/include/;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/LiquidCrystal/utility;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers/VM_DBG;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/th4aujbn.y5z/Micro Platforms/default/debuggers;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD;C:/Users/nbourg8/AppData/Local/arduino15/packages/chipKIT/hardware/pic32/1.3.0/libraries/SD/utility;</VMSETTING_IncludePaths>
     <VisualMicroSettings>
       <VisualMicroSettings xmlns="">
         <ValidatedAS7>1</ValidatedAS7>

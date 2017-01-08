@@ -18,5 +18,13 @@ C:\Users\nbourg8\AppData\Local\Temp\VMBuilds\FubarinoSD_LCD\chipKIT_chipkit_pic3
  C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Print.h \
  C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Printable.h \
  C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Stream.h \
- C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\LiquidCrystal/LiquidCrystal.h \
- C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Print.h
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/SD.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/SdFat.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/Sd2Card.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/Sd2PinMap.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/SdInfo.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/FatStructs.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Print.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\SD/utility/SdFatUtil.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\cores\pic32/Stream.h \
+ C:\Users\nbourg8\AppData\Local\arduino15\packages\chipKIT\hardware\pic32\1.3.0\libraries\LiquidCrystal/LiquidCrystal.h
