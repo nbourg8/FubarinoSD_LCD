@@ -13,7 +13,7 @@ BYTE		DATA		DESCRIPTION														EXAMPLE
 2			0x3E		LSB Main Bat Voltage											serial.write(0x3E); //0x02 + 0x3E = 0x23E = 574 decimal = 3.7volts
 3			0x02		MSB 2nd Bat Voltage												serial.write(0x02); //
 4			0x3A		LSB 2nd Bat Voltage												serial.write(0x3A); //0x02 + 0x3A = 0x23A = 570 decimal = 3.67volts
-5			0x01		Save Settings Indicator											serial.write(0x01); //(Typically 0 or 1) Save Settings set to TRUE
+5			0x01		Save to SD Indicator											serial.write(0x01); //(Typically 0 or 1) Save to SD set to TRUE
 6			0x00		Factory Reset Indicator											serial.write((byte)00); //(Typically 0 or 1) Factory Reset set to FALSE
 7			0x60		Speed															serial.write(0x60); // 0x60 = 96dec = 96MPH
 8			0x0A		Spin															serial.write(0x0A); //0x0A = 10dec = 10%
@@ -27,7 +27,7 @@ BYTE		DATA		DESCRIPTION														EXAMPLE
 2			0x3E		LSB Main Bat Voltage											serial.write(0x3E); //0x02 + 0x3E = 0x23E = 574 decimal = 3.7volts
 3			0x02		MSB 2nd Bat Voltage												serial.write(0x02); //
 4			0x3A		LSB 2nd Bat Voltage												serial.write(0x3A); //0x02 + 0x3A = 0x23A = 570 decimal = 3.67volts
-5			0x01		Save Settings Indicator											serial.write(0x01); //(Typically 0 or 1) Save Settings set to TRUE
+5			0x01		Save to SD Indicator											serial.write(0x01); //(Typically 0 or 1) Save to SD set to TRUE
 6			0x00		Factory Reset Indicator											serial.write((byte)00); //(Typically 0 or 1) Factory Reset set to FALSE
 7			0x60		Speed															serial.write(0x60); // 0x60 = 96dec = 96MPH
 8			0x0A		Spin															serial.write(0x0A); //0x0A = 10dec = 10%
@@ -57,6 +57,8 @@ int horiz_angle = 0;
 int millis_past = millis();
 int millis_current = millis_past;
 
+int mySerialData[11];
+
 void setup()
 {
 	pinMode(pin_menuUP,INPUT);
@@ -85,7 +87,7 @@ void setup()
 
 void loop()
 {
-	int mySerialData[11];
+	
 	millis_current = millis();
 	if (Serial1.available() >=10)	//ensure Serial communication is functional - don't waste time if remote is sleeping
 	{
@@ -147,7 +149,7 @@ void loop()
 		{
 			lcd.clear();
 			lcd.setCursor(0,0);
-			lcd.print("Save Settings?");
+			lcd.print("Save to SD?");
 			lcd.setCursor(0,1);
 			lcd.print("L=No, R=YES");
 		}
@@ -208,16 +210,16 @@ void editParam(String direction)
 	{
 		if (direction == "right")
 		{
+			SD_Write('Settings: ' + String(mySerialData[7]) + ',' + String(mySerialData[8]) + ',' + String(mySerialData[9]) + ',' + String(mySerialData[10]));
 			lcd.clear();
 			lcd.home();
-			lcd.print("Settings Saved");
+			lcd.print("Saved to SD");
 			for (int i = 3;i--;i>0)
 			{
 				lcd.setCursor(0,1);
 				lcd.print(i);
 				delay(1000);
 			}
-			SD_Write("Settings Saved");
 			mainMenu = 0;
 		}
 		else
@@ -227,7 +229,11 @@ void editParam(String direction)
 	}
 	else if (mainMenu == 2)
 	{
-		//Save settings
+		//Factory Reset
+		speed = 0;
+		spin = 0;
+		vert_angle = 0;
+		horiz_angle = 0;
 		//confirm saved
 	}
 	else if (mainMenu == 3)
