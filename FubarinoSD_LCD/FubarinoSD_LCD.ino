@@ -46,10 +46,10 @@ LiquidCrystal lcd(12, 11, 10,9,8,7);
 const int chipSelect_SD_default = 27; //SD pin chip select for FubarinoSD
 
 int mainMenu = 0;
-int bat_main = 0;
-int bat_secondary = 0;
+float bat_main = 0;
+float bat_secondary = 0;
 int max_menu_count = 6;
-float speed = 0;
+int speed = 0;
 int spin = 0;
 int vert_angle = 0;
 int horiz_angle = 0;
@@ -64,22 +64,23 @@ void setup()
 	pinMode(pin_menuUP,INPUT);
 	pinMode(pin_Right,INPUT);
 	pinMode(pin_Left,INPUT);
-	lcd.begin(16, 2);		// set up the lcd's number of columns and rows:
+	
 	Serial.begin(115200);	// USB Comm Port
 	//Serial0.begin(115200);// UART1 - pins 8 (RX) and 9 (TX)
 	Serial1.begin(115200);  // UART2 - pins 28 (RX) and 29 (TX)
-	lcd.clear();
+	
 	pinMode(chipSelect_SD_default, OUTPUT);
 	digitalWrite(chipSelect_SD_default,HIGH);
-	
-	// see if the card is present and can be initialized:
-	if (!SD.begin(chipSelect_SD_default))
+	delay(50); // not required, placed to ensure time for digitalWrite
+	if (!SD.begin(chipSelect_SD_default)) // Check if SD is ready
 	{
 		Serial.println("Card failed, or not present");
 		// don't do anything more:
 		return;
 	}
 	Serial.println("card initialized.");
+	lcd.begin(16, 2);		// set up LCD with number of columns and rows:
+	lcd.clear();
 	lcd.home();
 	lcd.print("Connecting...");
 }
@@ -98,6 +99,10 @@ void loop()
 				mySerialData[i] = Serial1.read();
 				Serial.print(mySerialData[i], HEX);
 				Serial.print(',');
+				speed = mySerialData[7];
+				spin = mySerialData[8];
+				vert_angle = mySerialData[9];
+				horiz_angle = mySerialData[10];
 			}
 			Serial.println();
 		}
@@ -137,11 +142,11 @@ void loop()
 		{
 			lcd.clear();
 			lcd.setCursor(0,0);
-			lcd.print("%    Bat Main");
+			lcd.print("%      Bat Main");
 			lcd.setCursor(1,0);
 			lcd.print(bat_main);
 			lcd.setCursor(0,1);
-			lcd.print("%    Bat 2nd");
+			lcd.print("%      Bat 2nd");
 			lcd.setCursor(1,1);
 			lcd.print(bat_secondary);
 		}
